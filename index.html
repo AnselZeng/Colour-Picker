@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+    Colour Picker
+    Made by: Ansel Zeng
+-->
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+        <link rel = "icon" href = "paint.png">
+        <title>Colour Picker</title>
+        
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    
+    <body>
+
+        <div>
+            <h1>Colour Picker</h1>
+
+            <ul>
+                <!-- User inputs colour in text -->
+                <li>Enter your colour: <input type = "text" id = "inputColorText"></li>
+
+                <!-- User inputs colour using palette -->
+                <li>Select your colour: <input type = "color" id = "inputColorPalette"></li>
+
+                <!-- Button to get colour -->
+                <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
+
+                <!-- Outputs the colour id -->
+                <li>HEX Colour Code: <input type = "text" id = "colorOutput"></li>
+            </ul>
+        </div>
+
+        <!-- JavaScript -->
+        <script src = "script.js"></script>
+    </body>
+</html>
