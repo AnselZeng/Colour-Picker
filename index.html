@@ -1,49 +1,93 @@
 <!DOCTYPE html>
-<!--
-    Colour Picker
-    Made by: Ansel Zeng
--->
 <html lang = "en">
     <head>
         <meta charset = "UTF-8">
         <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-
+        <!-- Author -->
+        <meta name = "author" content = "Ansel Zeng">
+        <!-- Description -->
+        <meta name = "description" content = "JavaScript Colour Picker">
+        <!-- Keywords -->
+        <meta name = "keywords" content = "JavaScript, Colour Picker">
+        <!-- Icon -->
         <link rel = "icon" href = "paint.png">
+        <!-- Title -->
         <title>Colour Picker</title>
-        
+        <!-- Font -->
+        <link href = "https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel = "stylesheet">
+        <!-- CSS Link -->
         <link rel = "stylesheet" href = "styles.css">
-        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     
     <body>
 
-        <div>
-            <h1>Colour Picker</h1>
+        <div class = "container">
 
-            <ul>
-                <!-- User inputs colour in text -->
-                <!--
-                    <li>Enter your colour: <input type = "text" id = "inputColorText"></li>
-                -->
+            <!-- Header -->
+            <div class = "header">
+                <h1>Colour Picker</h1>
+            </div>
 
-                <!-- User inputs colour using palette -->
-                <li>Select your colour: <input type = "color" id = "inputColorPalette"></li>
+            <!-- Picker Section -->
+            <div class = "picker">
 
-                <!-- Button to get colour -->
-                <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
-                <!--
-                    <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
-                -->
+                <!-- Colour Picker Slider -->
+                <div class = "input">
+                    Red <input type = "range" min = "0" max = "255" id = "red" value = "130">
+                    Green <input type = "range" min = "0" max = "255" id = "green" value = "130">
+                    Blue <input type = "range" min = "0" max = "255" id = "blue" value = "130">
+                </div>
 
-                <!-- Outputs the colour id -->
-                <li>HEX Colour Code: <input type = "text" id = "colorOutputHEX"></li>
-                <!--
-                    <li>RGB Colour Code: <input type = "text" id = "colorOutputRGB"></li>
-                -->
-            </ul>
+                <!-- Displays the Picked Colour-->
+                <div class = "display"></div>
+
+                <!-- Outputs Colour Codes -->
+                <div class = "outputs">
+                    <p>HEX: <span class = 'hex'>##23456</span></p>
+                    <p>RGB: <span class = 'rgb'>(123, 123, 123)</span></p>
+                    <p>HSL: <span class = 'hsl'>()</span></p>
+                    <p>CMYK: <span class = 'cymk'>(0%, 0%, 0%, 0%)</span></p>
+
+                    <!-- Button to save colour to Palettes Section -->
+                    <button class = 'save'>Save Colour</button>
+                </div>
+            </div>
+
+            <!-- Palettes Section -->
+            <div class = "palettes">Hello
+                <!-- Saved colour palettes will be shown here -->
+            </div>
         </div>
 
         <!-- JavaScript -->
         <script src = "script.js"></script>
     </body>
 </html>
+
+<!--
+    <div>
+        <h1>Colour Picker</h1>
+
+        <ul>
+            <!- User inputs colour in text -->
+            <!--
+                <li>Enter your colour: <input type = "text" id = "inputColorText"></li>
+            -->
+
+            <!-- User inputs colour using palette --
+            <li>Select your colour: <input type = "color" id = "inputColorPalette"></li>
+
+            <!- Button to get colour --
+            <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
+            <!-
+                <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
+            -->
+
+            <!-- Outputs the colour id --
+            <li>HEX Colour Code: <input type = "text" id = "colorOutputHEX"></li>
+            <!-
+                <li>RGB Colour Code: <input type = "text" id = "colorOutputRGB"></li>
+            --
+        </ul>
+    </div>
+-->
