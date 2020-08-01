@@ -10,16 +10,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: green;
-    background: orange;
+    color: black;
+    background: pink;
 }
 .container {
     width: 800px;
-    background: blue;
+    border: solid black 1px;
+    background: orange;
 }
 .header {
     height: 40px;
-    background: red;
+    margin-bottom: -10px;
 }
 .picker {
     display: flex;
@@ -28,7 +29,6 @@ body {
     justify-content: center;
     margin: 10px;
     height: 200px;
-    background: yellow;
 }
 .input {
     width: 40%;
@@ -37,31 +37,39 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+}
+.input input {
+    width: 90%;
+    height: 50px;
+    -webkit-appearance: none;
+    height: 5px;
+    margin: 10px;
+    background-color: white;
+}
+.input input:hover {
+    cursor: pointer;
 }
 .display {
-    background: red;
     border-radius: 20px;
     width: 15%;
     height: 100%;
+    background: rgb(130, 130, 130);
 }
 .outputs {
     width: 30%;
     height: 100%;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: pink;
 }
 .outputs p {
     margin-bottom: 5px;
-    background: red;
 }
 .outputs button {
     width: 50%;
     height: 20px;
-    color: red;
 }
 .palettes {
     width: 800px;
