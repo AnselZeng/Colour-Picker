@@ -3,24 +3,42 @@
     padding: 0;
     font-family: 'Nunito', sans-serif;
     text-align: center;
+    list-style: none;
 }
+
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
-    background: pink;
+    background: none;
 }
+
 .container {
-    width: 800px;
+    width: 600px;
+    height: 600px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -300px;
+
     border: solid black 1px;
     background: orange;
 }
+
 .header {
     height: 40px;
-    margin-bottom: -10px;
+    margin-bottom: 0px;
+    background: lightblue;
+}
+.input-section {
+    background: lightpink;
+}
+.user-input {
+    background: lightcoral;
 }
 .picker {
     display: flex;
@@ -37,6 +55,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: lightseagreen;
 }
 .input input {
     width: 90%;
@@ -49,31 +68,39 @@ body {
 .input input:hover {
     cursor: pointer;
 }
+
+.output-section {
+    background: green;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .display {
     border-radius: 20px;
-    width: 15%;
+    width: 40%;
     height: 100%;
     background: rgb(130, 130, 130);
 }
 .outputs {
-    width: 30%;
+    width: 40%;
     height: 100%;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: lightgreen;
 }
 .outputs p {
-    margin-bottom: 5px;
 }
 .outputs button {
     width: 50%;
     height: 20px;
 }
-.palettes {
-    width: 800px;
-    background: white;
+
+.footer {
+    background: rgba(255, 255, 255, 0.4);
 }
 
 /*
@@ -118,5 +145,9 @@ ul {
 li {
     margin-top: 10px;
     list-style: none;
+}
+.palettes {
+    width: 600px;
+    background: white;
 }
 */

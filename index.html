@@ -20,17 +20,22 @@
     </head>
     
     <body>
-
         <div class = "container">
-
             <!-- Header -->
             <div class = "header">
                 <h1>Colour Picker</h1>
             </div>
 
-            <!-- Picker Section -->
-            <div class = "picker">
-
+            <!-- Input Section -->
+            <div class = "input-section">
+                
+                <div class = "user-input">
+                    <ul>
+                        <li>Enter your colour: <input type = "text" id = "inputColorText"></li>
+                        <li>Select your colour: <input type = "color" id = "inputColorPalette"></li>
+                    </ul>
+                </div>
+                
                 <!-- Colour Picker Slider -->
                 <div class = "input">
                     Red <input type = "range" min = "0" max = "255" id = "red" value = "130">
@@ -38,20 +43,21 @@
                     Blue <input type = "range" min = "0" max = "255" id = "blue" value = "130">
                 </div>
 
-                <!-- Displays the Picked Colour-->
-                <div class = "display"></div>
+            </div>
 
-                <!-- Outputs Colour Codes -->
+            <div class = "output-section">
+                <!-- Displays the Picked Colour-->
+                <div class = "display">Colour Display</div>
+
                 <div class = "outputs">
                     <p>HEX: <span class = 'hex'>#828282</span></p>
                     <p>RGB: <span class = 'rgb'>(130, 130, 130)</span></p>
-                    <!-- <p>HSL: <span class = 'hsl'>()</span></p>
-                    <p>CMYK: <span class = 'cymk'>(0%, 0%, 0%, 0%)</span></p> -->
-
-                    <!-- Button to save colour to Palettes Section --
-                    <button class = 'save'>Save Colour</button>
-                    -->
                 </div>
+            </div>
+
+            <!-- Footer -->
+            <div class = "footer">
+                <p>Made by Ansel Zeng<br>Copyright © 2020. All rights reserved.</p>
             </div>
 
             <!--
@@ -94,4 +100,10 @@
             --
         </ul>
     </div>
+
+    <p>HSL: <span class = 'hsl'>()</span></p>
+                    <p>CMYK: <span class = 'cymk'>(0%, 0%, 0%, 0%)</span></p> -->
+
+                    <!-- Button to save colour to Palettes Section --
+                    <button class = 'save'>Save Colour</button>
 -->
