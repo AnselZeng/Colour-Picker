@@ -12,6 +12,7 @@
         <title>Colour Picker</title>
         
         <link rel = "stylesheet" href = "styles.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     
     <body>
@@ -21,16 +22,24 @@
 
             <ul>
                 <!-- User inputs colour in text -->
-                <li>Enter your colour: <input type = "text" id = "inputColorText"></li>
+                <!--
+                    <li>Enter your colour: <input type = "text" id = "inputColorText"></li>
+                -->
 
                 <!-- User inputs colour using palette -->
                 <li>Select your colour: <input type = "color" id = "inputColorPalette"></li>
 
                 <!-- Button to get colour -->
                 <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
+                <!--
+                    <li><input type = "button" id = "colorButton" value = "Click to Get Colour" onclick = "changeColor()"></li>
+                -->
 
                 <!-- Outputs the colour id -->
-                <li>HEX Colour Code: <input type = "text" id = "colorOutput"></li>
+                <li>HEX Colour Code: <input type = "text" id = "colorOutputHEX"></li>
+                <!--
+                    <li>RGB Colour Code: <input type = "text" id = "colorOutputRGB"></li>
+                -->
             </ul>
         </div>
 
