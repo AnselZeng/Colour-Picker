@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: black;
-    background: none;
+    background: rgb(130, 130, 130)
 }
 
 h1, p {
@@ -30,7 +30,7 @@ h1, p {
     left: 50%;
     margin: -300px 0 0 -300px;
 
-    /* border: solid black 1px; */
+    border: solid black 3px;
     background: orange;
 }
 
@@ -113,17 +113,43 @@ h1, p {
 
 .shades {
     margin-top: 10px;
-    padding: 0;
     display: flex;
     flex-direction: row;
     background: lightsalmon;
+    align-items: center;
+    justify-content: center;
 }
 
 .display {
-    border-radius: 20px;
+    border-radius: 25px;
     width: 100px;
     height: 200px;
     background: rgb(130, 130, 130);
+}
+
+.shades1, .shades2, .shades3 {
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 20px;
+    width: 60px;
+    height: 150px;
+    background: rgb(130, 130, 130);
+    background: hsl(0%, 0%, 50%);
+}
+
+.shades4, .shades5, .shades6 {
+    margin-left: 10px;
+    padding: 0;
+    border-radius: 20px;
+    width: 60px;
+    height: 150px;
+    background: rgb(130, 130, 130);
+}
+
+.lighter-darker {
+    margin-top: 10px;
+    width: 100%;
+    background: blanchedalmond;
 }
 
 .footer {

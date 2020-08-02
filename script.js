@@ -5,6 +5,12 @@ const ready = () => {
     let blue = 130
     const input = document.querySelectorAll("input");
     const display = document.querySelector(".display");
+    const shades1 = document.querySelector(".shades1");
+    const shades2 = document.querySelector(".shades2");
+    const shades3 = document.querySelector(".shades3");
+    const shades4 = document.querySelector(".shades4");
+    const shades5 = document.querySelector(".shades5");
+    const shades6 = document.querySelector(".shades6");
 
     for (var i = 0; i < input.length; i++) {
         input[i].addEventListener("input", function () {
@@ -13,6 +19,13 @@ const ready = () => {
             blue = document.getElementById("blue").value;
             
             display.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades1.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades2.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades3.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades4.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades5.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades6.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
             
             outputValue(Number(red), Number(green), Number(blue))
         });
