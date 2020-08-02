@@ -19,12 +19,20 @@ const ready = () => {
             blue = document.getElementById("blue").value;
             
             display.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+
             shades1.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades1.style.background = "hsl(0, 0%, 90%)";
             shades2.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades2.style.background = "hsl(0, 0%, 75%)";
             shades3.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades3.style.background = "hsl(0, 0%, 55%)";
             shades4.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades4.style.background = "hsl(0, 0%, 45%)";
             shades5.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades5.style.background = "hsl(0, 0%, 25%)";
             shades6.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            shades6.style.background = "hsl(0, 0%, 10%)";
+
             document.body.style.backgroundColor = "rgb(" + red + ", " + green + ", " + blue + ")";
             
             outputValue(Number(red), Number(green), Number(blue))
